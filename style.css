@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F8F8F8;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#start-screen, #quiz-screen, #game-over-screen {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#start-btn, #submit-btn, #save-btn, #Highscore-btn {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#start-btn:hover, #submit-btn:hover, #save-btn:hover, #Highscore-btn {
+  background-color: #005ea8;
+}
+
+.hidden {
+  display: none;
+}
+
+#timer {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-left: 5px;
+  font-size: 1.2rem;
+}
+
+#score {
+  font-weight: bold;
+}
+
+/* Responsive styles for small screens */
+@media screen and (max-width: 480px) {
+  #start-screen, #quiz-screen, #game-over-screen {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+  

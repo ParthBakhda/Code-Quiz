@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Code Quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Code Quiz</h1>
+
+  <div id="start-screen">
+    <p>Test your coding knowledge with this quiz! Click the button below to start.</p>
+    <button id="start-btn">Start</button>
+    <button id="Highscore-btn">Viewhighscores</button>
+    
+  </div>
+
+  <div id="quiz-screen" class="hidden">
+    <p id="timer">Time: <span id="time-remaining"></span></p>
+    <p id="question"></p>
+    <form id="choices">
+      <label>
+        <input type="radio" name="answer" value="1">
+        <span id="answer1"></span>
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="answer" value="2">
+        <span id="answer2"></span>
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="answer" value="3">
+        <span id="answer3"></span>
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="answer" value="4">
+        <span id="answer4"></span>
+      </label>
+      <br>
+      
+    </form>
+    <button onclick="submitAnswer()" type="submit" id="submit-btn">Submit</button>
+  </div>
+
+  <div id="game-over-screen" class="hidden">
+    <p>Your score is <span id="score"></span>!</p>
+    <form>
+      <label>
+        Initials:
+        <input type="text" name="initials" id="username">
+      </label>
+      <br>
+      <button  id="save-btn">Save</button>
+    </form>
+    <div>id past scores</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
